@@ -6,6 +6,7 @@ const config = require("./config/DB")
 const userRoutes = require("./routes/userRoutes")
 const authRouters = require("./routes/authRouters")
 const timeoffRoutes = require("./routes/timeoffRoutes")
+const ofEromRoutes = require("./routes/ofEromRoutes")
 const cartRoutes = require("./routes/carRoutes")
 const orderRoutes = require("./routes/orderRoutes")
 const cors = require("cors");
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use("/api/auth", authRouters)
 app.use("/api/users", userRoutes)
 app.use("/api/timeoffs", timeoffRoutes)
+app.use("/api/otforms", ofEromRoutes)
 app.use("/api/carts", cartRoutes)
 app.use("/api/orders", orderRoutes)
 
